@@ -1,0 +1,50 @@
+.banner{
+    text-align: center;
+    margin: 20%;
+    padding-top: 0%;
+    margin-bottom: 5%;
+}
+.banner p{
+    margin: 10%;
+    text-align: justify;
+}
+.banner button{
+    padding: 1%;
+    background-color: #ffff;
+}
+.banner a{
+    text-decoration: none;
+    color: black;
+}
+.banner a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.banner button:hover{
+    padding: 2%;
+    font-size: 20px;
+    background-color: black;
+    color: #ffff;
+    transition: 1s;
+}
+
+      
+
+.hide {
+    display: none; 
+  }
+.myDIV{
+    text-decoration: underline;
+}
+      
+.myDIV:hover + .hide{
+    display:inline-block;
+    height: 300px;
+    margin-bottom: -50px;
+    align-items: center;
+    animation: fadeIn 1.5s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

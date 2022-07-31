@@ -1,0 +1,91 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: static;
+}
+h3{
+  text-align: center;
+}
+.main-scroll-div{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow:scroll;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    padding: 5%;
+    
+}
+.main-scroll-div::-webkit-scrollbar{
+    border-radius: 30px;
+  }
+.main-scroll-div::-webkit-scrollbar-track{
+    background-color: rgba(175, 175, 175, 0.274);
+    border-radius: 30px;
+  }
+.main-scroll-div::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 90px;
+  }
+
+
+
+.scroll-images{
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+       
+}
+.proj-imgbx{
+    padding: 3%;
+    margin: 2px;
+    border-style: solid;
+    height: 60vh;
+}
+.icon{
+    color:black;
+    margin-right: 10px; 
+}
+.proj-imgbx:hover {
+    padding: 8%;
+    margin: 6px;
+    border-style: none;
+    border-width: 6px;
+    height: 70vh;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0)),var(--my-image);
+    background-size:cover;
+    box-shadow: 20px 20px 50px 15px grey;
+  /* background-image: var(--my-image); */
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: fadeIn 0.6s;
+}
+
+.proj-imgbx:hover .text{
+  transform: 1s;
+  color: white;
+}
+.proj-imgbx:hover .icon{
+  color: white;
+}
+.proj-imgbx .icon:hover{
+  color: black;
+}
+
+@media only screen 
+  and (max-device-width: 800px){
+    .proj-imgbx{
+      min-width: 40vh;
+    }
+    .proj-imgbx:hover{
+      background-size: contain;
+    }
+  }

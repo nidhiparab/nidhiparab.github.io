@@ -1,0 +1,19 @@
+nav.navbar {
+    padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition:  0.32 ease-in-out;
+  }
+  .navbar-link {
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    letter-spacing: 0.8px;
+    padding: 0 25px;
+    font-size: 18px;
+  }
+.navbar-nav a.nav-link.navbar-link.active {
+    font-weight: 500;
+    /* text-decoration: underline; */
+}

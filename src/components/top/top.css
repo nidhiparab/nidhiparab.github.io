@@ -1,0 +1,31 @@
+.toTop{
+    position: fixed;
+    margin-left: 10%;
+    
+    bottom: 10%;
+    z-index: 9999;
+}
+
+.goTop{
+    color: black;
+    font-size: 300%;
+}
+.goTop:hover{
+    font-size: 400%;
+    animation: bounce 0.9s linear;
+    color: black;
+}
+@keyframes bounce {
+   to{
+    opacity: 0;
+        transform:  translateY(-300px) ;
+    }
+  }
+@media only screen 
+  and (max-device-width: 800px)
+ {
+    .toTop{
+        bottom: 0;
+        padding: 20%;
+    }
+}
