@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.52bb70b0.css",
+    "main.js": "/static/js/main.3ec32a93.js",
+    "static/media/hand.png": "/static/media/hand.d10cce320126ed33124f.png",
+    "static/media/ibm.png": "/static/media/ibm.2e2038425f414c4817b6.png",
+    "static/media/me.jpeg": "/static/media/me.061e673e342973996b03.jpeg",
+    "static/media/quanta.png": "/static/media/quanta.eae2156e8fb7456a140d.png",
+    "static/media/future.png": "/static/media/future.0396b7455beeb18e40d4.png",
+    "static/media/vlab.png": "/static/media/vlab.61164b3c739636251346.png",
+    "index.html": "/index.html",
+    "main.52bb70b0.css.map": "/static/css/main.52bb70b0.css.map",
+    "main.3ec32a93.js.map": "/static/js/main.3ec32a93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52bb70b0.css",
+    "static/js/main.3ec32a93.js"
+  ]
+}
