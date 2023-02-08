@@ -1,0 +1,31 @@
+
+.time{
+    padding: 2rem;
+    padding-bottom: 20%;
+    margin: 0 auto;
+    margin-top: 18%;
+    /* max-width: 800px; */
+    overflow: hidden;
+}
+.top{
+    padding: 4rem 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+.round{
+    color: black;
+    
+}
+.vertical-timeline-element-title{
+    text-align: left;
+}
+.vertical-timeline-element-subtitle{
+    font-size: 13px;
+}
+.vertical-timeline-element-para{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 13px;
+    text-align: left;
+}

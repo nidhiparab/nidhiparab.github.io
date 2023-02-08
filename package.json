@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@coreui/coreui": "^4.2.0",
+    "@coreui/react": "^4.3.0",
+    "react-slick": "^0.29.0",
+    "react-vertical-timeline-component": "^3.5.2",
+    "slick-carousel": "^1.8.1"
+  }
+}

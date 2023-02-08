@@ -1,0 +1,22 @@
+.sideBar{
+    position: fixed;
+    background-color: black;
+    align-items: center;
+    width: 5%;
+    margin:4%;
+    margin-top: 10%;
+    height: 400px;
+    border-radius: 30px;
+}
+.siderow{
+    padding: 15%;
+    margin-top:30%;
+}
+
+.ico{
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+.sideBar .ico:hover{
+    transform: translate(0, -5px);
+}

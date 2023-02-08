@@ -1,0 +1,23 @@
+.certificate{
+    width: 90%;
+    margin: 10%;
+    margin-left: 20% ;
+}
+.certiname{
+    min-width: 60%;
+}
+.certi-row{
+    padding: 1%;
+}
+.certi:hover {
+    display: block;
+}
+.certi-li{
+    text-decoration: none;
+    color: black;
+}
+.certi-li:hover{
+    font-weight: 600;
+    font-size: 110%;
+    color: black;
+}

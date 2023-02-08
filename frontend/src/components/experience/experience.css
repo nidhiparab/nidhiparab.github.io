@@ -1,0 +1,33 @@
+.exp{
+    width: 90%;
+    margin-bottom: 25%;
+}
+.row-exp{
+    margin:5%;
+    
+}
+.headi{
+  padding-top:5% ;
+}
+.row-detail1{
+    padding: 3%;
+    border-top: solid;
+    border-bottom: solid;
+}
+
+.hide {
+    display: none;
+  }
+  
+  .myExp:hover + .hide {
+    display: block;
+    animation: push 1s;
+  }
+.row-detail2{
+    padding: 3%;
+    border-bottom: solid;
+}
+@keyframes push {
+    0% { opacity: 0;padding: 0%; }
+    100% { opacity: 1; padding-bottom: 0%;}
+  }
