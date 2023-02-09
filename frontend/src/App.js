@@ -13,10 +13,8 @@ import Education from './components/education/Education.jsx'
 import Certification from './components/certification/Certification.jsx'
 import MultipleItems from './components/myprojects/myprojects.jsx';
 import Top from './components/top/top.jsx';
-// import Port from './components/portfolio/portfolio.jsx';
-// import Contact from './components/contact/contact.jsx';
 import Footer from './components/footer/footer.jsx';
-// import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import CustomCursor from './components/CustomCursor/CustomCursor.jsx';
 
 function App() {
   return (
@@ -24,6 +22,7 @@ function App() {
       <Helmet>
         <title>Nidhi Parab</title>
       </Helmet>
+      <CustomCursor/>
       <Navi/>
       {/* <Sidebar/> */}
       {/* <Top/> */}

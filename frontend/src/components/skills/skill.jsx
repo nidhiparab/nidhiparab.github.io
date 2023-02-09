@@ -11,7 +11,7 @@ const Skill = () => {
         <Container className="">
         <Row className="">
 			<Row>
-				<h3 className="title">Used by My Hands And Mind</h3>
+				<h3 className="title">Used <span className="by">by</span> My Hands And Mind</h3>
 			</Row>
 			<Row className="skill-content">
 				<Col className="comp col-lg-4 h-25">

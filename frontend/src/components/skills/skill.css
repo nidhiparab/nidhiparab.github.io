@@ -3,12 +3,16 @@
     margin-top: 20%;
     margin-bottom: 20%;
     padding: 2%;
+    color: black;
   } 
  .title{
   font-weight: 700;
    font-size: 40px;
  }
- 
+ /* .by{
+  -webkit-text-stroke: 2px black;
+  color: #ffff;
+ } */
  .skill-content{
    margin-top: 8%;
  }

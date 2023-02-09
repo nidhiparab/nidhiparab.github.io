@@ -28,8 +28,8 @@ function Banner() {
 						product is an exciting opportunity to mold complex analysis and data into a clear, compelling,
 						and accessible form.
 					</p>
-					<button>
-						<a href="mailto:nidhiparabmail@gmail.com"> Let's Cross Paths</a>{' '}
+					<button id="contact">
+						<a href="mailto:nidhiparabmail@gmail.com" className="text-decoration-none"> Let's Cross Paths</a>{' '}
 					</button>
 				</Col>
 			</Row>

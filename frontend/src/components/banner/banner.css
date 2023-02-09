@@ -8,24 +8,26 @@
     margin: 10%;
     text-align: justify;
 }
-.banner button{
-    padding: 1%;
-    background-color: #ffff;
-}
 .banner a{
     text-decoration: none;
     color: black;
 }
-.banner a:hover{
-    text-decoration: none;
-    color: #fff;
+
+#contact{
+    cursor: none;
+    padding: 1%;
+    background-color: #ffff;
 }
-.banner button:hover{
-    padding: 2%;
+
+#contact:hover a{
+    /* padding: 0.1%; */
     font-size: 20px;
-    background-color: black;
     color: #ffff;
-    transition: 1s;
+    transition: 0.6s;
+}
+#contact:hover{
+    background-color: black;
+    transition: 0.6s;
 }
 
       

@@ -6,26 +6,37 @@
     margin-top: 18%;
     /* max-width: 800px; */
     overflow: hidden;
+    color: #ffff;
 }
 .top{
     padding: 4rem 0;
     max-width: 600px;
     margin: auto;
+    color: #ffff;
+    
+}
+.timeline p{
+    color: #ffff;
 }
 
 .round{
     color: black;
-    
 }
 .vertical-timeline-element-title{
     text-align: left;
+    color: #ffff;
+    
 }
 .vertical-timeline-element-subtitle{
     font-size: 13px;
+    color: #ffff;
+    
 }
 .vertical-timeline-element-para{
     margin-top: 20px;
     margin-bottom: -10px;
     font-size: 13px;
     text-align: left;
+    color: #ffff;
+    
 }
