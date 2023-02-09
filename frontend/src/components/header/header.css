@@ -1,5 +1,25 @@
+.header{
+    margin-top: 2vh;
+    /* background-color: aqua; */
+}
 
-.headerCont{
+.header h1{
+    font-size: 90px;
+    font-weight: 700;
+}
+.header p{
+    font-size: 20px;
+    /* font-weight: 700; */
+}
+
+.content{
+    height: calc(100vh - 20px);
+}
+
+.name{
+    text-align: right;
+}
+/* .headerCont{
     position: static;
 }
 .header{
@@ -18,7 +38,7 @@
     font-size: 50px;
     color: rgb(129, 129, 129);
     text-decoration: none;
-}
+} */
 
 /* .header h1{
     font-size: 160%;
@@ -42,7 +62,7 @@
     font-size: 30px;
 } */
 
-@media only screen 
+/* @media only screen 
   and (max-device-width: 800px)
  {
     .headerCont{
@@ -69,4 +89,4 @@
         color: black;
     }
 }
-
+ */

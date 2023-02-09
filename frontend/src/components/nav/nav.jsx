@@ -11,8 +11,9 @@ function Navi() {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY >= 300) {
         setScrolled(true);
+        console.log("scroll")
       } else {
         setScrolled(false);
       }
@@ -29,7 +30,7 @@ function Navi() {
 
   
   return (
-    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+    <Navbar expand="md" className={scrolled ? "" : "scrolled"}>
         <Container>
           <Navbar.Brand href="#about">
             <h3  className="name">Nidhi Parab</h3>

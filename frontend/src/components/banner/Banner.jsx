@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import './banner.css';
-import './download.jpg';
+
 
 function Banner() {
 	return (
