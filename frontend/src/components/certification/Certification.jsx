@@ -6,6 +6,16 @@ import { Row, Col, Container } from 'react-bootstrap';
 const Certification = () => {
 	const accordionData = [
 		{
+			title: 'Google Kickstart 2022',
+			certilink: 'https://drive.google.com/file/d/1V49wCqRFsmli2ZvKJCLM4fZDDs69dEQR/view?usp=sharing',
+			date: 'Aug 2022'
+		},
+		{
+			title: 'IEEE Bombay Section: Ideathon',
+			certilink: 'https://drive.google.com/file/d/1DIMokVUU45ovL85Kb-b8xFDHpi0S5wW_/view?usp=sharing',
+			date: 'Dec 2022'
+		},
+		{
 			title: 'Developing Cloud Apps with Node.js and React',
 			certilink: 'https://www.coursera.org/account/accomplishments/certificate/MTZB9JJNP7KP',
 			date: 'Jul 2022'
@@ -27,7 +37,7 @@ const Certification = () => {
 		},
 		{
 			title: 'Silver Elite Certification for Programming in Java',
-			certilink: 'https://triplebyte.com/tb/nidhi-parab-vlxiqva/certificate',
+			certilink: 'https://drive.google.com/file/d/1uQSTsOiDeUrWIMYX28oP7V08Dl0b3KFD/view?usp=sharing',
 			date: 'Nov 2021'
 		},
 		

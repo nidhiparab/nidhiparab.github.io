@@ -30,7 +30,7 @@ function Experience() {
 						iconStyle={{ background: 'rgb(0, 0, 0)', color: '#fff' }}
 					>
 						<h3 className="vertical-timeline-element-title">Literature Team Head</h3>
-						<h6 className="vertical-timeline-element-subtitle">Pratishta 2021-Present</h6>
+						<h6 className="vertical-timeline-element-subtitle">Student Council 2021-Present</h6>
 						<p>Content Writing, Team building</p>
 					</VerticalTimelineElement>
 					<VerticalTimelineElement
