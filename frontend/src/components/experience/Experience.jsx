@@ -11,16 +11,22 @@ function Experience() {
 			<Row className="row-exp"> 
 				<Row className="row-detail1 myExp">
 					<Col xs={9}>
-						<h4 className="myExp">React And React Native Developer</h4>
-            <p className="hide">Dot Minds LPP</p>
+						<h4 className="myExp">Mentor</h4>
+            			<p className="hide">Rewriting The Code</p>
 					</Col>
-					<Col>Mar 2022 - May 2022
-          </Col>
+					<Col>Jun 2022 - Present</Col>
+				</Row>
+				<Row className="row-detail2 myExp">
+					<Col xs={9}>
+						<h4 className="myExp">React And React Native Developer</h4>
+            			<p className="hide">Dot Minds LPP</p>
+					</Col>
+					<Col>Mar 2022 - May 2022</Col>
 				</Row>
 				<Row className="row-detail2">
 					<Col xs={9}>
-          <h4 className="myExp">Simulation Developer</h4>
-            <p className="hide">Shah And Anchor Kutchhi Engineering College</p>
+          				<h4 className="myExp">Simulation Developer</h4>
+            			<p className="hide">Shah And Anchor Kutchhi Engineering College</p>
 					</Col>
 					<Col >Nov 2022 - Mar 2022</Col>
 				</Row>

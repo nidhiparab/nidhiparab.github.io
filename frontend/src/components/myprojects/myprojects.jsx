@@ -6,6 +6,7 @@ import hand from "../assets/hand.png"
 import vlab from "../assets/vlab.png"
 import quanta from "../assets/quanta.png"
 import ibm from "../assets/ibm.png"
+import chatgpt from "../assets/chatgpt.jpg"
 import { Row, Col, Container } from 'react-bootstrap';
 import Slider from "react-slick";
 
@@ -17,7 +18,7 @@ function Myprojects() {
       git:"https://github.com/nidhiparab/nidhiparab.github.io",
       web:"https://chatgpt-nidhi.vercel.app/",
       //imgUrl:{require("../assets/me.jpeg")}
-      imgUrl:future,
+      imgUrl:chatgpt,
       
     },
     {
