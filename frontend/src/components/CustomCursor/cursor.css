@@ -20,3 +20,10 @@
     border:1px solid black;
     pointer-events: none;
 }
+@media only screen 
+  and (max-device-width: 800px)
+ {
+    .main-cursor,.secondary-cursor{
+        display: none;  
+    }
+}

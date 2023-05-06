@@ -15,79 +15,20 @@
 
 .content{
     height: calc(100vh - 20px);
+    overflow-y: hidden
 }
 
 .name{
     text-align: right;
 }
-/* .headerCont{
-    position: static;
-}
-.header{
-    max-width: 90vh;
-    max-height: 90vh;
-    transform: rotateZ(270deg);
-}
-.header li{
-    margin-top: 100px;
-}
-.header h1:hover{
-    color: black;
-    font-size: 70px;
-}
-.header a{
-    font-size: 50px;
-    color: rgb(129, 129, 129);
-    text-decoration: none;
-} */
 
-/* .header h1{
-    font-size: 160%;
-} */
-/* .about{
-    font-size: 50px;
-}
-.edu{
-    font-size:20px ;
-}
-.exp{
-    font-size: 60px;
-}
-.proj{
-    font-size: 50px;
-}
-.certi{
-    font-size: 20px;
-}
-.resp{
-    font-size: 30px;
-} */
 
-/* @media only screen 
+@media only screen 
   and (max-device-width: 800px)
  {
-    .headerCont{
-       
-        max-width: 300px;
-        overflow:scroll;
-    }
-    .header ul{
-        padding-top: 50%;
-        margin-top:10% ;
-        overflow: scroll;
-       
-    }
     .header h1{
-        font-size: 80%;
-        padding: 5%;
-    }
-    .header li{
-        padding: 0px;
-        margin-top: 10px;
-    }
-    .header h1:hover{
-        font-size: 80%;
-        color: black;
+        
+        font-size: 50px;
     }
 }
- */
+
