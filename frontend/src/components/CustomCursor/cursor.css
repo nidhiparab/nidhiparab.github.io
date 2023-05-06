@@ -3,22 +3,25 @@
     pointer-events: none;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
-    position: fixed;   
+    position: fixed;
 }
-.main-cursor{
+/* .main-cursor{
     border-radius: 50%;
     width: 80px;
     height: 80px;
     border:1px solid black;
     pointer-events: none;
-}
+    
+} */
 .secondary-cursor{
     border-radius: 50%;
     background-color: black;
-    width: 20px;
-    height: 20px;
+    width: 90px;
+    height: 90px;
     border:1px solid black;
     pointer-events: none;
+    mix-blend-mode: difference;
+    background: white;
 }
 @media only screen 
   and (max-device-width: 800px)

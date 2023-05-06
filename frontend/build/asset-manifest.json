@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7abc79f.css",
-    "main.js": "/static/js/main.13bef2d6.js",
+    "main.css": "/static/css/main.c309d1f2.css",
+    "main.js": "/static/js/main.0b73ee19.js",
     "static/media/hand.png": "/static/media/hand.d10cce320126ed33124f.png",
     "static/media/cf.gif": "/static/media/cf.26462439b3827372d6d2.gif",
     "static/media/ibm.png": "/static/media/ibm.2e2038425f414c4817b6.png",
     "static/media/me.jpeg": "/static/media/me.061e673e342973996b03.jpeg",
+    "static/media/yogi.png": "/static/media/yogi.c460724e7c9479226183.png",
     "static/media/quanta.png": "/static/media/quanta.eae2156e8fb7456a140d.png",
     "static/media/future.png": "/static/media/future.0396b7455beeb18e40d4.png",
+    "static/media/idf.jpeg": "/static/media/idf.106df51ea2a53ac638a3.jpeg",
     "static/media/comp2.jpeg": "/static/media/comp2.eaa89647afb34fb46d54.jpeg",
     "static/media/vlab.png": "/static/media/vlab.61164b3c739636251346.png",
     "static/media/chatgpt.jpg": "/static/media/chatgpt.622594822b987fe54594.jpg",
     "index.html": "/index.html",
-    "main.e7abc79f.css.map": "/static/css/main.e7abc79f.css.map",
-    "main.13bef2d6.js.map": "/static/js/main.13bef2d6.js.map"
+    "main.c309d1f2.css.map": "/static/css/main.c309d1f2.css.map",
+    "main.0b73ee19.js.map": "/static/js/main.0b73ee19.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7abc79f.css",
-    "static/js/main.13bef2d6.js"
+    "static/css/main.c309d1f2.css",
+    "static/js/main.0b73ee19.js"
   ]
 }

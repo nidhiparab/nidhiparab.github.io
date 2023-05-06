@@ -18,6 +18,16 @@ function Experience() {
 						contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 0)' }}
 						iconStyle={{ background: 'rgb(0, 0, 0)', color: '#fff' }}
 					>
+						<h3 className="vertical-timeline-element-title">Ladies Representative</h3>
+						<h6 className="vertical-timeline-element-subtitle">Computer Department 2022-23</h6>
+						<p> Communication, Leadership, Advocacy, Interpersonal skills</p>
+					</VerticalTimelineElement>
+					<VerticalTimelineElement
+						className="vertical-timeline-element"
+						contentStyle={{ background: 'rgb(0, 0, 0)', color: '#fff' }}
+						contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 0)' }}
+						iconStyle={{ background: 'rgb(0, 0, 0)', color: '#fff' }}
+					>
 						<h3 className="vertical-timeline-element-title">Events Head</h3>
 						<h6 className="vertical-timeline-element-subtitle">CSI Sakec 2022-23</h6>
 						<p> Delegation, Analytical Decision Making, Perceptiveness</p>
