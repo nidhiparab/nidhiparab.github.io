@@ -3,7 +3,7 @@ import './myprojects.css';
 import { FaGithub,FaLink} from "react-icons/fa";
 
 
-export const ProjectCard = ({ title, description,git,web,imgUrl}) => {
+export const ProjectCard = ({ title, description,subdescription,git,web,imgUrl}) => {
    
   return (
     <Col size={12} sm={6} md={4}>
@@ -14,6 +14,7 @@ export const ProjectCard = ({ title, description,git,web,imgUrl}) => {
       <div className="proj-txtx">
           <h4 className="text">{title}</h4>
           <span className="text">{description}</span><br/>
+          <span className="text-sub">{subdescription}</span><br/>
           <a href={git}  className={git?'icon':'hide'}><FaGithub size="20px"/></a>
           <a href={web} className={web?'icon':'hide'}><FaLink size="20px"/></a>
         </div>

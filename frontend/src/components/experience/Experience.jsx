@@ -18,6 +18,13 @@ function Experience() {
 				</Row>
 				<Row className="row-detail2 myExp">
 					<Col xs={9}>
+						<h4 className="myExp">SDE Intern</h4>
+            			<p className="hide">Indian Development Foundation</p>
+					</Col>
+					<Col>Oct 2022 - Mar 2023</Col>
+				</Row>
+				<Row className="row-detail2 myExp">
+					<Col xs={9}>
 						<h4 className="myExp">React And React Native Developer</h4>
             			<p className="hide">Dot Minds LPP</p>
 					</Col>

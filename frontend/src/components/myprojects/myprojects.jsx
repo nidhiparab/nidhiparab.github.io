@@ -6,6 +6,8 @@ import hand from "../assets/hand.png"
 import vlab from "../assets/vlab.png"
 import quanta from "../assets/quanta.png"
 import ibm from "../assets/ibm.png"
+import yogi from "../assets/yogi.png"
+import idf from "../assets/idf.jpeg"
 import chatgpt from "../assets/chatgpt.jpg"
 import { Row, Col, Container } from 'react-bootstrap';
 import Slider from "react-slick";
@@ -13,13 +15,46 @@ import Slider from "react-slick";
 function Myprojects() {
   const projects = [
     {
+      title: "Yogi",
+      description: "The AI Yoga Instructor",
+      subdescription: "IEEE Bombay Section: Prequalifier",
+      git:"https://github.com/nidhiparab/YOGI",
+      //imgUrl:{require("../assets/me.jpeg")}
+      imgUrl:yogi,
+      
+    },
+    {
+      title: "Bal Gurukul",
+      description: "NGO Management Portal",
+      subdescription: "Internship",
+      web:"https://idfbalgurukul.com/",
+      //imgUrl:{require("../assets/me.jpeg")}
+      imgUrl:idf,
+      
+    },
+    {
       title: "ChatGPT",
       description: "Clone",
-      git:"https://github.com/nidhiparab/nidhiparab.github.io",
+      git:"https://github.com/nidhiparab/chatgpt",
       web:"https://chatgpt-nidhi.vercel.app/",
       //imgUrl:{require("../assets/me.jpeg")}
       imgUrl:chatgpt,
       
+    },
+    {
+      title: "BEE V-Lab",
+      description: "Superpsition Theorem Simulation",
+      subdescription: "Internship",
+      git:"https://github.com/nidhiparab/BEE-Virtual-laboratory",
+      web:"https://www.shahandanchor.com/VLab/expt/simulation.php?subID=4&expID=2",
+      imgUrl:vlab,
+    },
+    {
+      title: "Hand-2-Hand",
+      description: "Study Material Exchange",
+      subdescription: "React Native",
+      git:"https://github.com/nidhiparab/Hand2Hand",
+      imgUrl:hand,
     },
     {
       title: "Future-Edu",
@@ -36,22 +71,11 @@ function Myprojects() {
       web:"https://github.com/nidhiparab/Future-edu",
       imgUrl:ibm,
     },
-    {
-      title: "BEE V-Lab",
-      description: "Superpsition Theorem Simulation",
-      git:"https://github.com/nidhiparab/BEE-Virtual-laboratory",
-      web:"https://www.shahandanchor.com/VLab/expt/simulation.php?subID=4&expID=2",
-      imgUrl:vlab,
-    },
-    {
-      title: "Hand-2-Hand",
-      description: "An app to Buy and Sell Engineering Study Material ",
-      git:"https://github.com/nidhiparab/Hand2Hand",
-      imgUrl:hand,
-    },
+    
     {
       title: "Quanta",
-      description: "UI for Quantum Clustering",
+      description: "Learn Quantum Clustering",
+      subdescription: "UI/UX",
       web:"https://framer.com/share/Quanta--cOE9rrvTTZo5viSCV67q/RZAgbUr0T#RZAgbUr0T",
       imgUrl:quanta,
     },

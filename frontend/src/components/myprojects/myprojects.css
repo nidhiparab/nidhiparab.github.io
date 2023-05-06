@@ -10,6 +10,10 @@
 h3{
   text-align: center;
 }
+.text-sub{
+  font-size: 12px;
+  color: black;
+}
 .main-scroll-div{
     width: 90%;
     height: 90%;
@@ -69,6 +73,10 @@ h3{
   animation: fadeIn 0.6s;
 }
 
+.proj-imgbx:hover .text-sub{
+  transform: 1s;
+  color: white;
+}
 .proj-imgbx:hover .text{
   transform: 1s;
   color: white;
@@ -77,7 +85,7 @@ h3{
   color: white;
 }
 .proj-imgbx .icon:hover{
-  color: black;
+  color: rgb(160, 156, 156);
 }
 
 @media only screen 
