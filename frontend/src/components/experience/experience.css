@@ -53,8 +53,8 @@
     100% { opacity: 1; padding-bottom: 0%;}
   }
   @keyframes fade-left {
-    10% {
-      transform: translateX(-100px);
+    0% {
+      transform: translateX(-100%);
       opacity: 0;
     }
     100% {
