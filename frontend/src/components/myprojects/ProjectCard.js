@@ -11,12 +11,12 @@ export const ProjectCard = ({ title, description,subdescription,git,web,imgUrl})
     <div className="nofade">
       <div className="proj-imgbx row align-items-end" style={{ '--my-image': `url('${imgUrl}')` }} >
       
-      <div className="proj-txtx">
+          <div className="proj-txtx">
           <h4 className="text">{title}</h4>
           <span className="text">{description}</span><br/>
-          <span className="text-sub">{subdescription}</span><br/>
-          <a href={git}  className={git?'icon':'hide'}><FaGithub size="20px"/></a>
-          <a href={web} className={web?'icon':'hide'}><FaLink size="20px"/></a>
+          <span className="text-sub">{subdescription}</span><br/><br/>
+          <a href={git}  className={git?'icon':'hide'}><FaGithub size="40px"/></a>
+          <a href={web} className={web?'icon':'hide'}><FaLink size="40px"/></a>
         </div>
       </div>
         

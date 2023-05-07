@@ -15,6 +15,16 @@ import Slider from "react-slick";
 function Myprojects() {
   const projects = [
     {
+      title: "ChatGPT",
+      description: "Clone",
+      subdescription: "Personal Project",
+      git:"https://github.com/nidhiparab/chatgpt",
+      web:"https://chatgpt-nidhi.vercel.app/",
+      //imgUrl:{require("../assets/me.jpeg")}
+      imgUrl:chatgpt,
+      
+    },
+    {
       title: "Yogi",
       description: "The AI Yoga Instructor",
       subdescription: "IEEE Bombay Section: Prequalifier",
@@ -30,15 +40,6 @@ function Myprojects() {
       web:"https://idfbalgurukul.com/",
       //imgUrl:{require("../assets/me.jpeg")}
       imgUrl:idf,
-      
-    },
-    {
-      title: "ChatGPT",
-      description: "Clone",
-      git:"https://github.com/nidhiparab/chatgpt",
-      web:"https://chatgpt-nidhi.vercel.app/",
-      //imgUrl:{require("../assets/me.jpeg")}
-      imgUrl:chatgpt,
       
     },
     {
