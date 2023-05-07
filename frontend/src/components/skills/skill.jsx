@@ -7,12 +7,11 @@ const Skill = () => {
 
 	return (
     <div className="mySkill" id="skill">
-      <canvas className="" />
         <Container className="">
         <Row className="">
-			<Row>
-				<h3 className="title">Used <span className="by">by</span> My Hands And Mind</h3>
-			</Row>
+		<div className="top">
+				<h3>Used By My Hands And Mind</h3>
+			</div>
 			<Row className="skill-content">
 				<Col className="comp col-lg-4 h-25">
 					<img src={require('../assets/comp2.jpeg')} alt="" className="" />

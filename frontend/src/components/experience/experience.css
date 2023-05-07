@@ -3,21 +3,43 @@
     margin-bottom: 25%;
 }
 .row-exp{
-    margin:5%;
-    
+    margin-top: 5%;
 }
+.row-exp hr{
+  color: black;
+  opacity: 100%;
+  border-width:3px;
+  animation: fade-left 1s ease-in;
+}
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-left {
+  animation: fade-left 0.7s ease-in;
+}
+
 .headi{
   padding-top:5% ;
 }
-.row-detail1{
-    padding: 3%;
-    border-top: solid;
-    border-bottom: solid;
+.row-detail{
+    padding: 2%;
 }
 
 .hide {
     display: none;
   }
+.exp-date{
+  opacity: 1;
+  animation: none;
+  text-align: end;
+  justify-content: right;
+}
   
   .myExp:hover + .hide {
     display: block;
@@ -25,9 +47,18 @@
   }
 .row-detail2{
     padding: 3%;
-    border-bottom: solid;
 }
 @keyframes push {
     0% { opacity: 0;padding: 0%; }
     100% { opacity: 1; padding-bottom: 0%;}
+  }
+  @keyframes fade-left {
+    10% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
