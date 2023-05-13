@@ -2,6 +2,8 @@ import './App.css';
 import Header from './components/header/header.jsx';
 import Navi from './components/nav/nav.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MetaTags from 'react-meta-tags';
+
 // import About from './components/about/about.jsx';
 import { Helmet } from 'react-helmet';
 import Skill from './components/skills/skill.jsx';
@@ -22,6 +24,9 @@ function App() {
       <Helmet>
         <title>Nidhi Parab</title>
       </Helmet>
+      <MetaTags>
+      <meta name="google-site-verification" content="google0c1e061200997091.html" />
+      </MetaTags>
       <CustomCursor/>
       <Navi/>
       {/* <Sidebar/> */}

@@ -29,8 +29,11 @@ function Banner() {
 						and accessible form.
 					</p>
 					<button id="contact">
+					
 						<a href="mailto:nidhiparabmail@gmail.com" className="text-decoration-none"> Let's Cross Paths</a>{' '}
 					</button>
+					
+					
 				</Col>
 			</Row>
 		</Container>
