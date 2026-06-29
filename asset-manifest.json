@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9fc4dda.css",
-    "main.js": "/static/js/main.533133d3.js",
+    "main.css": "/static/css/main.ddb4d8fd.css",
+    "main.js": "/static/js/main.5f395bd4.js",
     "static/media/ac.jpg": "/static/media/ac.55c2d90dd142a81ba903.jpg",
     "static/media/hand.png": "/static/media/hand.d10cce320126ed33124f.png",
     "static/media/cf.gif": "/static/media/cf.26462439b3827372d6d2.gif",
@@ -9,16 +9,17 @@
     "static/media/yogi.png": "/static/media/yogi.c460724e7c9479226183.png",
     "static/media/load.gif": "/static/media/load.cb2c7dcefbb538c04e88.gif",
     "static/media/quanta.png": "/static/media/quanta.eae2156e8fb7456a140d.png",
+    "static/media/my.jpeg": "/static/media/my.8b02990e9dd034c2060e.jpeg",
     "static/media/future.png": "/static/media/future.0396b7455beeb18e40d4.png",
     "static/media/idf.jpeg": "/static/media/idf.106df51ea2a53ac638a3.jpeg",
     "static/media/vlab.png": "/static/media/vlab.61164b3c739636251346.png",
     "static/media/chatgpt.jpg": "/static/media/chatgpt.622594822b987fe54594.jpg",
     "index.html": "/index.html",
-    "main.d9fc4dda.css.map": "/static/css/main.d9fc4dda.css.map",
-    "main.533133d3.js.map": "/static/js/main.533133d3.js.map"
+    "main.ddb4d8fd.css.map": "/static/css/main.ddb4d8fd.css.map",
+    "main.5f395bd4.js.map": "/static/js/main.5f395bd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9fc4dda.css",
-    "static/js/main.533133d3.js"
+    "static/css/main.ddb4d8fd.css",
+    "static/js/main.5f395bd4.js"
   ]
 }
