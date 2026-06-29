@@ -1,6 +1,8 @@
 import './certification.css';
 import { FaGithub,FaLink} from "react-icons/fa";
 import { Row, Col, Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import {
 	CAccordion,
 	CAccordionHeader,
@@ -13,22 +15,28 @@ import {
 } from '@coreui/react';
 
 
-const CertiCard = ({ title, content, date, certilink}) => {
+const CertiCard = ({ title,company, content, date, certilink}) => {
    
   return (
     <Container >
-
-	<Row > 
-		<Row className="certi-row ">
-			<Col className="certiname"><Row>
-			<h4><a className="certi-li" href={certilink}>{title}</a></h4>
-			</Row>
-				
-			</Col>
-			<Col>{date}
-			</Col>
-		</Row>
-	</Row>
+	<Row className="reveal row-detail">
+								<Col >
+	<div className="no-hide" >
+								<a className="certi-li" href={certilink}>
+								<div className="myExp">
+									<span className="exp-name">{title} </span>
+									
+									<span className="exp-date">{date}</span></div>
+									</a>
+								</div>
+								    <p className="hide">{company}</p>
+									</Col>
+								<Col className="arrow-container">
+								<FontAwesomeIcon className="exp-rotatedarrow" icon={faArrowRight} />
+								 </Col>
+							<Row className="reveal fade-left" ><hr/></Row>
+							</Row>
+							
 </Container>
   )
   };

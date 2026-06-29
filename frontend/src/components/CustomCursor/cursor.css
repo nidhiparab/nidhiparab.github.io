@@ -16,8 +16,8 @@
 .secondary-cursor{
     border-radius: 50%;
     background-color: black;
-    width: 90px;
-    height: 90px;
+    width: 18px;
+    height: 18px;
     border:1px solid black;
     pointer-events: none;
     mix-blend-mode: difference;

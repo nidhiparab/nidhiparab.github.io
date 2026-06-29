@@ -1,0 +1,23 @@
+.preload{
+    display: flex;
+    height: 100vh;
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+    /* Remove any browser-default margins. */
+    margin: 0;
+    background: rgb(0, 0, 0);
+    z-index: 10;
+    
+}
+
+.logo-cont{
+    
+    align-self: center;
+
+}
+
+
+.preload img{
+    max-width: 20%;
+    
+}

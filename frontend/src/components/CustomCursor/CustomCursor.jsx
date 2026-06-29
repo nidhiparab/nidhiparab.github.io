@@ -25,9 +25,9 @@ const CustomCursor = () => {
       positionRef.current.mouseX =
         mouseX - secondaryCursor.current.clientWidth / 2;
       positionRef.current.mouseY =
-        mouseY - secondaryCursor.current.clientHeight / 2;
+        mouseY - secondaryCursor.current.clientHeight *5;
         
-      mainCursor.current.style.transform = `translate3d(${mouseX - mainCursor.current.clientWidth / 2}px, ${mouseY -mainCursor.current.clientHeight / 2}px, 0)`;
+      mainCursor.current.style.transform = `translate3d(${mouseX - mainCursor.current.clientWidth/2}px, ${mouseY -mainCursor.current.clientHeight/2}px, 0)`;
     });
 
     return () => {};

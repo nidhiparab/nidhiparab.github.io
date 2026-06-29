@@ -1,10 +1,12 @@
 import './App.css';
+import React,{useState,useEffect} from 'react';
 import Header from './components/header/header.jsx';
 import Navi from './components/nav/nav.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import About from './components/about/about.jsx';
 import { Helmet } from 'react-helmet';
+import Preload from './components/preload/preload.jsx';
 import Skill from './components/skills/skill.jsx';
 import Experience from './components/experience/Experience.jsx';
 import Positions from './components/positions/Positions.jsx';
@@ -18,28 +20,41 @@ import Footer from './components/footer/footer.jsx';
 import CustomCursor from './components/CustomCursor/CustomCursor.jsx';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(()=>{
+      setIsLoading(false);
+    },0)
+  })
+  
   return (
     <div className="App">
       <Helmet>
         <title>Nidhi Parab</title>
-      <meta name="google-site-verification" content="google0c1e061200997091.html" />
       </Helmet>
-
-      <CustomCursor/>
-      <Navi/>
-      {/* <Sidebar/> */}
-      {/* <Top/> */}
-      {/* <Port/> */}
-      <Header/>
-      <Banner/>
-      <Education/>
-      <Skill/>
-      <Experience/>
-      <MultipleItems/>
-      <Positions/>
-      <Certification/>
       
-      <Footer/>
+      <div>
+      {
+        isLoading?( <Preload/>) :(
+          <div>
+            <CustomCursor/>
+            <Navi/>
+            {/* <Sidebar/> */}
+            {/* <Top/> */}
+            {/* <Port/> */}
+            <Header/>
+            <Banner/>
+            {/* <Education/> */}
+            <Skill/>
+            <MultipleItems/>
+            <Experience/>
+            {/* <Positions/> */}
+            <Certification/>
+      
+            <Footer/>
+          </div>
+        )}
+      </div>      
   </div>
   );
 }

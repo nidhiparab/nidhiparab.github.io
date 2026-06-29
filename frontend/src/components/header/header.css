@@ -1,10 +1,14 @@
 .header{
-    margin-top: 2vh;
+    margin-top: 5%;
+    height: 100%;
+    overflow: hidden;
+    
     /* background-color: aqua; */
 }
 
 .header h1{
-    font-size: 90px;
+    font-size: 450%;
+    letter-spacing: -3px;
     font-weight: 700;
     color: black;
 }
@@ -13,13 +17,21 @@
     /* font-weight: 700; */
 }
 
-.content{
-    height: calc(100vh - 20px);
-    overflow-y: hidden
+.name-head{
+    margin-bottom: 5%;
+    animation: fade-head-left 1s;
+    
 }
 
-.name{
+.head-img{
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+
+.front{
     text-align: right;
+    animation: fade-right 1s;
 }
 
 
@@ -27,8 +39,29 @@
   and (max-device-width: 800px)
  {
     .header h1{
-        
         font-size: 50px;
     }
 }
 
+@keyframes fade-head-left{
+    0%{
+        opacity: 0;
+        transform: translateY(-330px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px) ;
+    }
+}
+@keyframes fade-right{
+    0%{
+        opacity: 0;
+        transform: translateY(630px) ;
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px) ;
+    }
+}

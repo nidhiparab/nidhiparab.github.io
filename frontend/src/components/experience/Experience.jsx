@@ -1,6 +1,7 @@
 import React from 'react';
 import './experience.css';
 import { Row, Col, Container } from 'react-bootstrap';
+import ExperienceCard from './experience.js';
 
 function Experience() {
 	function reveal() {
@@ -20,50 +21,51 @@ function Experience() {
 	  }
 	  
 	  window.addEventListener("scroll", reveal);
+	  
+	  const expData = [
+		  {
+			  title:'product intern',
+			  company:' crypt0nest',
+			  date: '2025-present'
+		  },
+		  {
+			  title:'research student',
+			  company:'indian institute of technology (iit), Bombay',
+			  date: '2023-2024'
+		  },
+		  {
+			  title:'software intern',
+			  company:'indian development foundation.',
+			  date: '2022-2023'
+		  },
+		  {
+			  title:'react development intern.',
+			  company:'dotminds',
+			  date: '2022'
+		  },
+		  {
+			  title:'simulation developer.',
+			  company:'shah & anchor kutchhi engineering college.',
+			  date: '2021'
+		  },
+	  ]
+	  
+	  
 	return (
 		<Container className="exp" id="experience">
-			<div class="headi">
-				<h3>Experience</h3>
-			</div>
-			<Row className="row-exp"> 
-			<Row className="reveal fade-left" ><hr/></Row>
-			
-				<Row className="row-detail myExp">
-					<Col >
-						<h4 className="myExp">Mentor</h4>
-            			<p className="hide">Rewriting The Code</p>
-					</Col>
-					<Col className="exp-date" xs={5}>Oct 2022 - Present</Col>
+		<Row>
+			<Col className="heading">
+					<h3>experience.</h3>
+			</Col>
+			<Col lg="8">
+				<Row className="row-exp"> 
+							{expData.map((exp, index)=>{
+								return <ExperienceCard key={index} {...exp}/>
+							})}
+							
 				</Row>
-				<Row className="reveal fade-left" ><hr/></Row>
-				
-				<Row className="row-detail myExp">
-					<Col>
-						<h4 className="myExp">SDE Intern</h4>
-            			<p className="hide">Indian Development Foundation</p>
-					</Col>
-					<Col className="exp-date" xs={5}>Oct 2022 - Mar 2023</Col>
-				</Row>
-				<Row className="reveal fade-left" ><hr/></Row>
-				
-				<Row className="row-detail myExp">
-					<Col >
-						<h4 className="myExp">React And React Native Developer</h4>
-            			<p className="hide">Dot Minds LPP</p>
-					</Col>
-					<Col className="exp-date" xs={5}>Mar 2022 - May 2022</Col>
-				</Row>
-				<Row className="reveal fade-left" ><hr/></Row>
-				
-				<Row className="row-detail">
-					<Col>
-          				<h4 className="myExp">Simulation Developer</h4>
-            			<p className="hide">Shah And Anchor Kutchhi Engineering College</p>
-					</Col >
-					<Col className="exp-date" xs={5} >Nov 2022 - Mar 2022</Col>
-				</Row>
-				<Row className="reveal fade-left" ><hr/></Row>
-			</Row>
+			</Col>
+		</Row>
 		</Container>
 	);
 }

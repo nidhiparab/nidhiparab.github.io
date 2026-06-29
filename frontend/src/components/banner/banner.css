@@ -1,53 +1,270 @@
-.banner{
+.banner-scroll-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.banner {
+    --expand-progress: 0;
+    --split-progress: 0;
+
     text-align: center;
-    margin: 20%;
-    padding-top: 0%;
-    margin-bottom: 5%;
+    margin: 0 !important;
+    width: 100% !important;
+    background-color: rgb(17, 17, 17);
+    padding:
+        calc(2.5rem - var(--expand-progress) * 0.5rem)
+        0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    min-height: calc(var(--expand-progress) * 100vh);
+    height: auto;
+    overflow: hidden;
+    transition: none;
 }
-.banner p{
-    margin: 10%;
+
+.banner-container {
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    padding-right: var(--bs-gutter-x, 0.75rem);
+}
+
+.banner-inner {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) calc(var(--split-progress) * min(420px, 42vw));
+    grid-template-areas: "content photo";
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--split-progress) * 3rem);
+    transition: none;
+}
+
+.banner-content {
+    grid-area: content;
+    justify-self: start;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    overflow: visible;
+    text-transform: lowercase;
+}
+
+.banner-content.text-reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.banner-content--intro {
     text-align: justify;
+    max-width: 100%;
 }
-.banner a{
+
+.banner-content--split {
+    text-align: left;
+}
+
+.content-block {
+    margin-bottom: 1.75rem;
+    animation: contentFadeIn 0.6s ease forwards;
+}
+
+.content-block:last-child {
+    margin-bottom: 0;
+}
+
+.content-block--latest {
+    animation: contentSlideIn 0.7s ease forwards;
+}
+
+.content-block--revealed {
+    animation: contentFadeIn 0.6s ease forwards;
+}
+
+.content-block h2 {
+    color: #fff;
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+.banner p {
+    color: #ffff;
+    text-align: inherit;
+    line-height: 1.8;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0;
+}
+
+.banner-photo {
+    grid-area: photo;
+    justify-self: end;
+    align-self: center;
+    opacity: var(--split-progress);
+    transform: translateX(calc((1 - var(--split-progress)) * 24px));
+    overflow: hidden;
+    width: 100%;
+    max-width: 420px;
+    max-height: calc(var(--split-progress) * min(70vh, 520px));
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    pointer-events: none;
+    will-change: opacity, transform, max-height;
+}
+
+.banner-photo-img {
+    width: 100%;
+    max-width: 420px;
+    height: calc(var(--split-progress) * min(70vh, 520px));
+    object-fit: cover;
+    border-radius: calc(var(--split-progress) * 12px);
+    box-shadow: 0 calc(var(--split-progress) * 20px) calc(var(--split-progress) * 60px) rgba(0, 0, 0, 0.45);
+    border: calc(var(--split-progress) * 1px) solid rgba(255, 255, 255, 0.12);
+}
+
+.banner a {
     text-decoration: none;
     color: black;
 }
 
-#contact{
-    cursor: none;
+#contact {
+    cursor: pointer;
     padding: 1%;
     background-color: #ffff;
 }
 
-#contact:hover a{
-    /* padding: 0.1%; */
+#contact:hover a {
     font-size: 20px;
     color: #ffff;
     transition: 0.6s;
 }
-#contact:hover{
+
+#contact:hover {
     background-color: black;
     transition: 0.6s;
 }
 
-
-      
-
 .hide {
-    display: none; 
-  }
-.myDIV{
+    display: none;
+}
+
+.myDIV {
     text-decoration: underline;
 }
-      
-.myDIV:hover + .hide{
-    display:inline-block;
+
+.myDIV:hover + .hide {
+    display: inline-block;
     height: 300px;
     margin-bottom: -50px;
     align-items: center;
     animation: fadeIn 1.5s;
-  }
-  @keyframes fadeIn {
+}
+
+.cursor-follow-image {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0);
+    animation: cursorImageAppear 0.35s ease-out forwards, cursorImageDisappear 0.25s ease-in 0.45s forwards;
+}
+
+@keyframes cursorImageAppear {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0) rotate(-120deg);
+    }
+    100% {
+        opacity: 0.75;
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+}
+
+@keyframes cursorImageDisappear {
+    0% {
+        opacity: 0.75;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.4);
+    }
+}
+
+@keyframes contentFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes contentSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 2rem 0;
+    }
+
+    .banner-inner {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "content"
+            "photo";
+        gap: calc(var(--split-progress) * 2rem);
+    }
+
+    .banner-content {
+        justify-self: stretch;
+    }
+
+    .banner-photo {
+        justify-self: center;
+        justify-content: center;
+    }
+
+    .banner-photo-img {
+        max-width: 100%;
+        height: calc(var(--split-progress) * 280px);
+    }
+
+    .banner p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .content-block h2 {
+        font-size: 1.1rem;
+    }
+}

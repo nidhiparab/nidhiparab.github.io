@@ -1,8 +1,70 @@
-.foot{
+
+.newsletter{
+    background-color: #EBEBEB;
+    padding: 10%;
+    width: 100%;
+    font-size: 1.3rem;
     margin-top: 10%;
+    
+    
+}
+.newsletter button{
+    color: #fff;
+    background-color: #000;
+    font-size: 1.3rem;
+    transition:font-size 1s ease;
+}
+
+.subs{
+    text-align: right;
+}
+
+.subs:hover .rotatedarrow{
+    font-size: 90%;
+    transform: rotate(0deg);
+}
+.subs:hover button{
+    background-color: #000;
+    font-size: 1.4rem;
+}
+
+.foot{
+    /* margin-top: 10%; */
     margin-bottom: 2%;
+    background-color: #000;
+    
+    margin-bottom: 0px;
+    padding: 3%;
+    min-height: 30vh;
+    /* align-items: center; */
+    text-align: center;
 }
-.line{
-    margin-bottom:2% ;
-    border-top-style: solid;
+.foot-links{
+    margin: 5%;
+    
 }
+
+.foot-link a{
+    color: #fff;
+    /* font-size: 1.5rem; */
+    text-decoration: none;
+    transition: text-decoration 1s ease-in;
+}
+
+.foot-link:hover .rotatedarrow{
+    font-size: 90%;
+    transform: rotate(0deg);
+}
+.foot-link a:hover {
+    text-decoration: underline;
+}
+
+.copyright{
+    color: #969696;
+    /* font-size: 1rem; */
+}
+
+@media only screen 
+  and (max-device-width: 800px){
+    
+  }

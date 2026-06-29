@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef, useState } from "react";
 import './myprojects.css';
 import { ProjectCard } from "./ProjectCard";
 import future from "../assets/future.png"
@@ -6,105 +6,118 @@ import hand from "../assets/hand.png"
 import vlab from "../assets/vlab.png"
 import quanta from "../assets/quanta.png"
 import ibm from "../assets/ibm.png"
+import rust from "../assets/rust.png"
+import colab from "../assets/colab.jpeg"
 import yogi from "../assets/yogi.png"
 import idf from "../assets/idf.jpeg"
+import ac from "../assets/ac.jpg"
 import chatgpt from "../assets/chatgpt.jpg"
 import { Row, Col, Container } from 'react-bootstrap';
 import Slider from "react-slick";
 
 function Myprojects() {
+
   const projects = [
     {
-      title: "ChatGPT",
-      description: "Clone",
-      subdescription: "Personal Project",
-      git:"https://github.com/nidhiparab/chatgpt",
-      web:"https://chatgpt-nidhi.vercel.app/",
+      title: "Colab-Alarm",
+      description: "pypi, python",
+      subdescription: "Open Source",
+      git:"https://github.com/nidhiparab/colab-alarm",
+      web:"https://pypi.org/project/colab-alarm/",
       //imgUrl:{require("../assets/me.jpeg")}
-      imgUrl:chatgpt,
+      imgUrl:colab,
       
     },
     {
+      title: "AirCare",
+      description: "django, vue.js",
+      subdescription: "Personal Project",
+      git:"https://github.com/nidhiparab/hvac-cmms",
+      // web:"https://chatgpt-nidhi.vercel.app/",
+      //imgUrl:{require("../assets/me.jpeg")}
+      imgUrl:ac,
+      
+    },
+    {
+      title: "GitHub Issue Finder CLI",
+      description: "rust",
+      subdescription: "Personal Project",
+      git:"https://github.com/nidhiparab/GitHub-Issue-Finder-CLI",
+      // web:"https://chatgpt-nidhi.vercel.app/",
+      //imgUrl:{require("../assets/me.jpeg")}
+      imgUrl:rust,
+      
+    },
+    // {
+    //   title: "chatgpt clone",
+    //   description: "react.js",
+    //   subdescription: "Personal Project",
+    //   git:"https://github.com/nidhiparab/chatgpt",
+    //   // web:"https://chatgpt-nidhi.vercel.app/",
+    //   //imgUrl:{require("../assets/me.jpeg")}
+    //   imgUrl:chatgpt,
+      
+    // },
+    {
       title: "Yogi",
-      description: "The AI Yoga Instructor",
+      description: "python, flask, html, css",
       subdescription: "IEEE Bombay Section: Prequalifier",
       git:"https://github.com/nidhiparab/YOGI",
       //imgUrl:{require("../assets/me.jpeg")}
       imgUrl:yogi,
       
     },
-    {
-      title: "Bal Gurukul",
-      description: "NGO Management Portal",
-      subdescription: "Internship",
-      web:"https://idfbalgurukul.com/",
-      //imgUrl:{require("../assets/me.jpeg")}
-      imgUrl:idf,
+    // {
+    //   title: "Bal Gurukul",
+    //   description: "NGO Management Portal",
+    //   subdescription: "Internship",
+    //   web:"https://idfbalgurukul.com/",
+    //   //imgUrl:{require("../assets/me.jpeg")}
+    //   imgUrl:idf,
       
-    },
+    // },
     {
-      title: "BEE V-Lab",
-      description: "Superpsition Theorem Simulation",
+      title: "superpsition theorem simulation",
+      description: "html, css, javascript",
       subdescription: "Internship",
       git:"https://github.com/nidhiparab/BEE-Virtual-laboratory",
       web:"https://www.shahandanchor.com/VLab/expt/simulation.php?subID=4&expID=2",
       imgUrl:vlab,
     },
-    {
-      title: "Hand-2-Hand",
-      description: "Study Material Exchange",
-      subdescription: "React Native",
-      git:"https://github.com/nidhiparab/Hand2Hand",
-      imgUrl:hand,
-    },
-    {
-      title: "Future-Edu",
-      description: "College Predictor",
-      git:"https://github.com/nidhiparab/Future-edu",
-      //imgUrl:{require("../assets/me.jpeg")}
-      imgUrl:future,
-      
-    },
-    {
-      title: "OTT Analysis",
-      description: "IBM Dashboard",
-      git:"https://github.com/smartinternz02/SBSPS-Challenge-5372-OTT-Platform-Analysis-Tool",
-      web:"https://github.com/nidhiparab/Future-edu",
-      imgUrl:ibm,
-    },
-    
-    {
-      title: "Quanta",
-      description: "Learn Quantum Clustering",
-      subdescription: "UI/UX",
-      web:"https://framer.com/share/Quanta--cOE9rrvTTZo5viSCV67q/RZAgbUr0T#RZAgbUr0T",
-      imgUrl:quanta,
-    },
+ 
     ];
   return (
-    <Container id="projects" ><Row className="headi">
-      <h3>Projects</h3>
-    </Row>
-      <Row className="body"><div className="main-scroll-div">
-      <div className="cover">
-        <a href=""></a>
-        <div className="scroll-images">
-        {
+    <div className="projects" >
+    <div className="work-heading" >
+      <div className="rightleft" >
+        <p> • PROJECTS • WORK • PROJECTS • WORK • PROJECTS • WORK</p>
+        <p> • PROJECTS • WORK • PROJECTS • WORK • PROJECTS • WORK</p>
+        <p> • PROJECTS • WORK • PROJECTS • WORK • PROJECTS • WORK</p>
+        <p> • PROJECTS • WORK • PROJECTS • WORK • PROJECTS • WORK</p>
+        <p> • PROJECTS • WORK • PROJECTS • WORK • PROJECTS • WORK</p>
+      </div>
+    
+    </div>
+    <div  >     
+      
+      
+      
+      <Container className="">
+      {
                           projects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
+                                index={index}
                                 {...project}
                                 />
                             )
                           })
                         }
-        </div>
-      </div>
-      
-    </div></Row>
+                        </Container>
 
-    </Container>
+    </div>
+    </div>
     
   )
 }
